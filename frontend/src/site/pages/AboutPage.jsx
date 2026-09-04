@@ -75,9 +75,12 @@ export const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="h-56 rounded-2xl bg-secondary-soft flex items-center justify-center text-primary">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.4-9.5 9-9.5 9z"></path></svg>
-            </div>
+            <img
+              src="/images/marketing/about-hero-adoption-success.jpg"
+              alt="A newly adopted dog with their new owner"
+              className="h-56 w-full rounded-2xl object-cover"
+              loading="lazy"
+            />
           </div>
         </Container>
       </SectionWrapper>
@@ -107,20 +110,28 @@ export const AboutPage = () => {
           <h2 className="font-display text-2xl md:text-3xl font-extrabold text-text-primary mb-6">
             Why Misty Started RescueNet360
           </h2>
-          <div className="bg-white border-l-[5px] border-primary rounded-r-2xl p-8 md:p-11 space-y-4 text-text-primary text-[15px] leading-loose">
-            <p>
-              I kept seeing missing dog posts online. Most looked like digital flyers, shared over and over by families who were scared, tired, and hoping someone had seen their pet. One story stayed with me.
-            </p>
-            <p>
-              An elderly dog went missing. Her owner searched relentlessly. I offered to help go door to door. She gently declined. When I asked if I could share her story to help others, she said no. She said sharing it would make it feel final. That moment changed how I saw the problem.
-            </p>
-            <p>
-              Lost pets are not only a neighborhood problem. They are an information problem. Shelters, rescues, pet owners, and community members all care, but they are often working from different places with different pieces of the story.
-            </p>
-            <p>
-              I built RescueNet360 because pets deserve a better chance, families deserve faster answers, and animal welfare teams deserve infrastructure that supports the work they are already doing.
-            </p>
-            <p className="font-bold text-primary pt-1">— Misty Harrison, Founder and CEO, RescueNet360</p>
+          <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 items-start">
+            <img
+              src="/images/team/misty-harrison.jpg"
+              alt="Misty Harrison, Founder and CEO of RescueNet360"
+              className="w-40 h-40 md:w-full md:h-auto aspect-square rounded-2xl object-cover mx-auto md:mx-0"
+              loading="lazy"
+            />
+            <div className="bg-white border-l-[5px] border-primary rounded-r-2xl p-8 md:p-11 space-y-4 text-text-primary text-[15px] leading-loose">
+              <p>
+                I kept seeing missing dog posts online. Most looked like digital flyers, shared over and over by families who were scared, tired, and hoping someone had seen their pet. One story stayed with me.
+              </p>
+              <p>
+                An elderly dog went missing. Her owner searched relentlessly. I offered to help go door to door. She gently declined. When I asked if I could share her story to help others, she said no. She said sharing it would make it feel final. That moment changed how I saw the problem.
+              </p>
+              <p>
+                Lost pets are not only a neighborhood problem. They are an information problem. Shelters, rescues, pet owners, and community members all care, but they are often working from different places with different pieces of the story.
+              </p>
+              <p>
+                I built RescueNet360 because pets deserve a better chance, families deserve faster answers, and animal welfare teams deserve infrastructure that supports the work they are already doing.
+              </p>
+              <p className="font-bold text-primary pt-1">— Misty Harrison, Founder and CEO, RescueNet360</p>
+            </div>
           </div>
         </Container>
       </SectionWrapper>

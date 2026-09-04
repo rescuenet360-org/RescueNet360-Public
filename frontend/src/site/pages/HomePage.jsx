@@ -52,45 +52,69 @@ export const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Shelters & Rescues Card */}
-            <div className="border border-secondary/20 rounded-2xl p-8 bg-secondary-soft">
-              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path></svg>
+            <div className="border border-secondary/20 rounded-2xl overflow-hidden bg-secondary-soft">
+              <img
+                src="/images/marketing/home-card-shelters.jpg"
+                alt="Shelter staff caring for a small dog in a kennel"
+                className="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div className="p-8">
+                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 11l9-8 9 8"></path><path d="M5 10v10h14V10"></path></svg>
+                </div>
+                <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Shelters &amp; Rescues</h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                  Your team is doing critical work with tools that were never designed to work together. There is a better way.
+                </p>
+                <Link to="/shelters-rescues" className="font-bold text-sm text-secondary hover:text-secondary-deep">
+                  Explore shelter tools →
+                </Link>
               </div>
-              <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Shelters &amp; Rescues</h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                Your team is doing critical work with tools that were never designed to work together. There is a better way.
-              </p>
-              <Link to="/shelters-rescues" className="font-bold text-sm text-secondary hover:text-secondary-deep">
-                Explore shelter tools →
-              </Link>
             </div>
 
             {/* Pet Owners Card */}
-            <div className="border border-secondary/20 rounded-2xl p-8 bg-secondary-soft">
-              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.4-9.5 9-9.5 9z"></path></svg>
+            <div className="border border-secondary/20 rounded-2xl overflow-hidden bg-secondary-soft">
+              <img
+                src="/images/marketing/home-card-pet-owners.jpeg"
+                alt="Child kneeling in the grass with a cat"
+                className="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div className="p-8">
+                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.4-9.5 9-9.5 9z"></path></svg>
+                </div>
+                <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Pet Owners</h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                  Your pet&apos;s information should not live only in your head. Register, protect, reunite.
+                </p>
+                <Link to="/pet-owners" className="font-bold text-sm text-secondary hover:text-secondary-deep">
+                  Explore pet owner tools →
+                </Link>
               </div>
-              <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Pet Owners</h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                Your pet&apos;s information should not live only in your head. Register, protect, reunite.
-              </p>
-              <Link to="/pet-owners" className="font-bold text-sm text-secondary hover:text-secondary-deep">
-                Explore pet owner tools →
-              </Link>
             </div>
 
             {/* Sponsors & Partners Card */}
-            <div className="border border-secondary/20 rounded-2xl p-8 bg-secondary-soft">
-              <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M2 20c0-3 3-5 6-5s6 2 6 5M10 20c0-3 3-5 6-5s6 2 6 5"></path></svg>
+            <div className="border border-secondary/20 rounded-2xl overflow-hidden bg-secondary-soft">
+              <img
+                src="/images/marketing/home-card-sponsors.jpg"
+                alt="Dog outside under cherry blossom petals"
+                className="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div className="p-8">
+                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-4 text-primary">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M2 20c0-3 3-5 6-5s6 2 6 5M10 20c0-3 3-5 6-5s6 2 6 5"></path></svg>
+                </div>
+                <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Sponsors &amp; Partners</h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                  This is infrastructure that protects animals at scale. See what your support builds.
+                </p>
+                <Link to="/sponsorship" className="font-bold text-sm text-secondary hover:text-secondary-deep">
+                  Explore sponsorship →
+                </Link>
               </div>
-              <h3 className="font-display text-xl font-extrabold mb-2.5 text-text-primary">Sponsors &amp; Partners</h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">
-                This is infrastructure that protects animals at scale. See what your support builds.
-              </p>
-              <Link to="/sponsorship" className="font-bold text-sm text-secondary hover:text-secondary-deep">
-                Explore sponsorship →
-              </Link>
             </div>
           </div>
         </Container>
@@ -154,6 +178,14 @@ export const HomePage = () => {
           </p>
         </Container>
       </SectionWrapper>
+
+      {/* Section 6 — Closing Visual Band */}
+      <img
+        src="/images/marketing/home-banner-peeking-pets.jpg"
+        alt="Dogs and cats peeking over a ledge"
+        className="w-full h-auto max-h-48 object-cover"
+        loading="lazy"
+      />
     </div>
   );
 };

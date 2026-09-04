@@ -86,6 +86,15 @@ export const SheltersPage = () => {
         </Container>
       </SectionWrapper>
 
+      {/* Section 1b — Hero Photo Band */}
+      <img
+        src="/images/marketing/shelters-hero-adoption-day.jpg"
+        alt="A volunteer helping a family meet a rescued cat at an adoption event"
+        className="w-full h-64 md:h-80 object-cover"
+        style={{ objectPosition: '50% 65%' }}
+        loading="lazy"
+      />
+
       {/* Section 2 — Problem / Solution */}
       <SectionWrapper background="transparent" className="py-16" style={{ backgroundColor: 'rgb(var(--color-secondary-soft))' }}>
         <Container>
@@ -150,30 +159,38 @@ export const SheltersPage = () => {
       <SectionWrapper background="surface" className="py-16">
         <Container size="narrow">
           <div className="text-xs font-bold uppercase tracking-wider text-text-secondary mb-5">Pilot Program</div>
-          <div className="border border-secondary/20 rounded-3xl p-8 md:p-12">
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold mb-4 text-text-primary leading-tight">
-              Shape the Standard. Help Build the Network Animal Welfare Has Always Needed.
-            </h2>
-            <p className="text-text-secondary leading-relaxed mb-8">
-              We are inviting a small group of shelters and rescues to test real workflows, tell us what fits, and help prioritize the next build decisions. No cost. No obligation beyond honest feedback.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
-              {[
-                { icon: <><rect x="4" y="11" width="16" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></>, label: 'Early platform access' },
-                { icon: <><path d="M21 12a8 8 0 01-11.5 7.2L4 21l1.8-5.5A8 8 0 1121 12z"></path></>, label: 'Direct input into features' },
-                { icon: <><path d="M12 17.3L6.2 21l1.6-6.6L2.5 9.7l6.7-.6L12 3l2.8 6.1 6.7.6-5.3 4.7L18 21z"></path></>, label: 'Founding Partner recognition' },
-              ].map((item) => (
-                <div key={item.label} className="bg-secondary-soft rounded-2xl p-6 text-center">
-                  <div className="text-primary mb-2.5 flex justify-center">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">{item.icon}</svg>
+          <div className="border border-secondary/20 rounded-3xl p-8 md:p-12 grid grid-cols-1 md:grid-cols-[1fr_220px] gap-8 items-start">
+            <div>
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold mb-4 text-text-primary leading-tight">
+                Shape the Standard. Help Build the Network Animal Welfare Has Always Needed.
+              </h2>
+              <p className="text-text-secondary leading-relaxed mb-8">
+                We are inviting a small group of shelters and rescues to test real workflows, tell us what fits, and help prioritize the next build decisions. No cost. No obligation beyond honest feedback.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
+                {[
+                  { icon: <><rect x="4" y="11" width="16" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></>, label: 'Early platform access' },
+                  { icon: <><path d="M21 12a8 8 0 01-11.5 7.2L4 21l1.8-5.5A8 8 0 1121 12z"></path></>, label: 'Direct input into features' },
+                  { icon: <><path d="M12 17.3L6.2 21l1.6-6.6L2.5 9.7l6.7-.6L12 3l2.8 6.1 6.7.6-5.3 4.7L18 21z"></path></>, label: 'Founding Partner recognition' },
+                ].map((item) => (
+                  <div key={item.label} className="bg-secondary-soft rounded-2xl p-6 text-center">
+                    <div className="text-primary mb-2.5 flex justify-center">
+                      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">{item.icon}</svg>
+                    </div>
+                    <div className="font-bold text-sm text-text-primary">{item.label}</div>
                   </div>
-                  <div className="font-bold text-sm text-text-primary">{item.label}</div>
-                </div>
-              ))}
+                ))}
+              </div>
+              <p className="text-sm text-text-secondary">
+                Also includes priority onboarding support and a practical way to help shape regional animal welfare infrastructure.
+              </p>
             </div>
-            <p className="text-sm text-text-secondary">
-              Also includes priority onboarding support and a practical way to help shape regional animal welfare infrastructure.
-            </p>
+            <img
+              src="/images/marketing/shelters-secondary-outreach.jpeg"
+              alt="A veterinarian providing care to a rescued dog in the field"
+              className="w-full h-full max-h-72 md:max-h-none rounded-2xl object-cover"
+              loading="lazy"
+            />
           </div>
         </Container>
       </SectionWrapper>

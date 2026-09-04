@@ -31,7 +31,14 @@ export const PilotProgramPage = () => {
           <Link to="/shelters-rescues#apply" className="btn btn-primary min-h-[56px] px-8 text-lg font-bold shadow-elevated">Apply to Be a Pilot Partner →</Link>
         </Container>
       </SectionWrapper>
-      
+
+      <img
+        src="/images/marketing/pilot-hero-foster-team.jpeg"
+        alt="Two volunteers holding a litter of foster puppies"
+        className="w-full h-64 md:h-80 object-cover"
+        loading="lazy"
+      />
+
       <SectionWrapper background="surface" className="py-16">
         <Container size="narrow">
           <div className="card card-comfortable prose prose-slate max-w-none">
@@ -51,8 +58,20 @@ export const PilotProgramPage = () => {
             </p>
           </div>
           
-          <div className="mt-12 text-center">
-            <Link to="/shelters-rescues#apply" className="btn btn-secondary font-extrabold shadow-elevated">Apply to Be a Pilot Partner →</Link>
+          <div className="mt-12 relative rounded-3xl overflow-hidden">
+            <img
+              src="/images/marketing/pilot-cta-sign.jpg"
+              alt=""
+              aria-hidden="true"
+              className="w-full h-56 md:h-64 object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+              <h3 className="font-display text-xl md:text-2xl font-extrabold text-text-primary mb-4 max-w-md">
+                Your organization&apos;s name could be here.
+              </h3>
+              <Link to="/shelters-rescues#apply" className="btn btn-secondary font-extrabold shadow-elevated">Apply to Be a Pilot Partner →</Link>
+            </div>
           </div>
         </Container>
       </SectionWrapper>

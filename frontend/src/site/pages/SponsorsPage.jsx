@@ -52,9 +52,12 @@ export const SponsorsPage = () => {
                 When sponsors support RescueNet360, they help fund the systems that move information faster, strengthen reunification, support shelters and rescues, and give communities a better way to respond when animals are lost, displaced, or at risk.
               </p>
             </div>
-            <div className="h-56 rounded-2xl bg-secondary-soft flex items-center justify-center text-primary">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M2 20c0-3 3-5 6-5s6 2 6 5M10 20c0-3 3-5 6-5s6 2 6 5"></path></svg>
-            </div>
+            <img
+              src="/images/marketing/sponsors-hero-care.jpg"
+              alt="A dog being cared for after a wash"
+              className="h-56 w-full rounded-2xl object-cover"
+              loading="lazy"
+            />
           </div>
         </Container>
       </SectionWrapper>
@@ -63,9 +66,12 @@ export const SponsorsPage = () => {
       <SectionWrapper background="transparent" className="py-16" style={{ backgroundColor: 'rgb(var(--color-secondary-soft))' }}>
         <Container>
           <div className="grid gap-14 lg:grid-cols-2 items-center">
-            <div className="h-56 rounded-2xl bg-white flex items-center justify-center text-primary order-2 lg:order-1">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 21s7-7.5 7-12a7 7 0 10-14 0c0 4.5 7 12 7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
-            </div>
+            <img
+              src="/images/marketing/sponsors-secondary-kittens.jpeg"
+              alt="Three bottle-baby kittens huddled together"
+              className="h-56 w-full rounded-2xl object-cover order-2 lg:order-1"
+              loading="lazy"
+            />
             <div className="order-1 lg:order-2">
               <div className="text-xs font-bold uppercase tracking-wider text-secondary mb-3.5">Regional Model</div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold text-text-primary mb-4 leading-tight">

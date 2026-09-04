@@ -31,7 +31,26 @@ export const HowItWorksPage = () => {
           <Link to="/start" className="btn btn-primary min-h-[56px] px-8 text-lg font-bold shadow-elevated">Get Started →</Link>
         </Container>
       </SectionWrapper>
-      
+
+      <SectionWrapper background="surface" className="py-10">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img
+              src="/images/marketing/how-it-works-medical.jpg"
+              alt="A veterinarian examining a small dog"
+              className="w-full h-56 rounded-2xl object-cover"
+              loading="lazy"
+            />
+            <img
+              src="/images/marketing/how-it-works-transport.jpeg"
+              alt="A cat peeking out of a soft travel carrier"
+              className="w-full h-56 rounded-2xl object-cover"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+      </SectionWrapper>
+
       <SectionWrapper background="surface" className="py-16">
         <Container>
           <ContentGrid columns={3} className="max-w-6xl mx-auto">

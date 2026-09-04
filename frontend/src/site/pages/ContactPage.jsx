@@ -22,15 +22,25 @@ export const ContactPage = () => {
       {/* Hero + Routing Cards */}
       <SectionWrapper background="transparent" className="py-16" style={{ backgroundColor: 'rgb(var(--color-secondary-soft))' }}>
         <Container>
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-extrabold uppercase tracking-wider bg-white border border-secondary/20 text-text-primary rounded-pill">
-            Contact
-          </span>
-          <h1 className="font-display text-3xl md:text-4xl font-extrabold mb-4 leading-tight text-text-primary">
-            Let&apos;s Talk.
-          </h1>
-          <p className="text-text-secondary text-[15.5px] leading-relaxed max-w-xl mb-10">
-            Have a question, idea, partnership request, or pilot inquiry? Send us a message. We read every submission.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-center mb-10">
+            <div>
+              <span className="inline-block px-4 py-1.5 mb-6 text-xs font-extrabold uppercase tracking-wider bg-white border border-secondary/20 text-text-primary rounded-pill">
+                Contact
+              </span>
+              <h1 className="font-display text-3xl md:text-4xl font-extrabold mb-4 leading-tight text-text-primary">
+                Let&apos;s Talk.
+              </h1>
+              <p className="text-text-secondary text-[15.5px] leading-relaxed max-w-xl">
+                Have a question, idea, partnership request, or pilot inquiry? Send us a message. We read every submission.
+              </p>
+            </div>
+            <img
+              src="/images/marketing/contact-hero-front-desk.jpeg"
+              alt="A shelter employee helping a visitor at the front desk"
+              className="h-56 w-full rounded-2xl object-cover"
+              loading="lazy"
+            />
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Pilot Interest */}
@@ -97,6 +107,13 @@ export const ContactPage = () => {
         <Container>
           <div className="w-full">
             <div className="text-center mb-10">
+              <img
+                src="/images/marketing/contact-accent-mascot.jpg"
+                alt=""
+                aria-hidden="true"
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-5"
+                loading="lazy"
+              />
               <h2 className="font-display text-2xl md:text-3xl font-extrabold text-text-primary mb-3">
                 Send Us a Message
               </h2>

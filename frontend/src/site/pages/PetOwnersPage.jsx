@@ -124,9 +124,12 @@ export const PetOwnersPage = () => {
                 RescueNet360 gives your pet a living profile that supports faster action when time matters.
               </p>
             </div>
-            <div className="h-56 rounded-2xl bg-secondary-soft flex items-center justify-center text-primary">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.4-9.5 9-9.5 9z"></path></svg>
-            </div>
+            <img
+              src="/images/marketing/pet-owners-hero-family.jpeg"
+              alt="A family sitting outside with their dog"
+              className="h-56 w-full rounded-2xl object-cover"
+              loading="lazy"
+            />
           </div>
         </Container>
       </SectionWrapper>
@@ -135,9 +138,12 @@ export const PetOwnersPage = () => {
       <SectionWrapper background="transparent" className="py-16" style={{ backgroundColor: 'rgb(var(--color-secondary-soft))' }}>
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            <div className="h-52 rounded-2xl bg-white flex items-center justify-center text-primary order-2 lg:order-1">
-              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="11" width="16" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg>
-            </div>
+            <img
+              src="/images/marketing/pet-owners-secondary-bond.jpeg"
+              alt="A young girl holding a bottle-baby kitten"
+              className="h-52 w-full rounded-2xl object-cover order-2 lg:order-1"
+              loading="lazy"
+            />
             <div className="order-1 lg:order-2">
               <div className="text-xs font-bold uppercase tracking-wider text-secondary mb-3.5">Privacy</div>
               <h2 className="font-display text-2xl md:text-3xl font-extrabold text-text-primary mb-4 leading-tight">
